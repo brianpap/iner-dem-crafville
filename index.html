@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style media="screen">
+      tr {
+        padding:0;
+        margin:0;
+        height:10%
+      }
+      td {
+        width:10%;
+        margin: 0;
+        padding: 0;
+        border-spacing: 0px 0;
+        border-collapse: separate;
+      }
+      table {
+        max-width: 100%;
+        max-height: 100%;
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0;
+      }
+      .sidebar {
+        border: 1px solid black;
+        width:33%;
+        height:10%;
+      }
+      #craft{
+        display:none;
+      }
+      #bloc{
+        width:100%;
+        height:100%;
+      }
+      svg{
+        width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+      }
+      #recwirements {
+        border: 1px solid black
+      }
+    </style>
+  </head>
+  <body>
+    <div id="craft">
+      <p style="color:red;" onclick="item(0)">X
+      </p>
+      <p class="sidebar" onclick="item(1)">Strawberry portle
+      </p>
+      <p class="sidebar" onclick="item(2)">Use strawberry portle
+      </p>
+      <p class="sidebar" onclick="item(3)">Make hard strawberry
+      </p>
+      <p class="sidebar" onclick="item(4)">Make a miner
+      </p>
+      <p class="sidebar" onclick="item(5)">Make strawberry plants
+      </p>
+      <p class="sidebar" onclick="item(7)">brick portle
+      </p>
+      <p class="sidebar" onclick="item(8)">Use brick portle
+      </p>
+      <p class="sidebar" onclick="item(6)">crafting temple
+      </p>
+      <p class="sidebar" onclick="item(9)">Strawberry crafting temple
+      </p>
+      <div id="recwirements">
+      </div>
+    </div>
+    <div id="play">
+      <table cellpadding="0" cellspacing="0">
+        <tbody id="game">
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(0)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(1)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(2)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(3)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(4)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(5)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(6)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(7)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(8)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(9)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(10)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(11)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg width='100%' height='100%'>
+                  <rect width='100%' height='100%' fill='yellow' />
+                  <path d='m 10 10 l 35 0 l 0 35 l -35 0 l 0 -35 m 45 0 l 35 0 l 0 35 l -35 0 l 0 -35 m 0 45 l 35 0 l 0 35 l -35 0 l 0 -35 m -10 0 l -35 0 l 0 35 l 35 0 l 0 -35 z ' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(12)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(13)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(14)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(15)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(16)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(17)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(18)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(19)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(20)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(21)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(22)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(23)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(24)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(25)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(26)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(27)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(28)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(29)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(30)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(31)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(32)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(33)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(34)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(35)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(36)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(37)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(38)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(39)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(40)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(41)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(42)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(43)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(44)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(45)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(46)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(47)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(48)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(49)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(50)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(51)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(52)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(53)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(54)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(55)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(56)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(57)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(58)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(59)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(60)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(61)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(62)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(63)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(64)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(65)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(66)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(67)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(68)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(69)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(70)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(71)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(72)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(73)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(74)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(75)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(76)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(77)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(78)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(79)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <!-- row one front of start base -->
+            <td class="blocka" onClick="mine(80)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(81)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(82)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(83)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(84)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(85)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(86)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(87)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(88)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <path d="m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35" stroke="black" stroke-width="1" fill="green" />
+              </svg>
+            </td>
+            <td class="blocka" onClick="mine(89)">
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                  <rect width='100%' height='100%' fill='black' />
+                  <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+                </svg>
+              </svg>
+            </td>
+          </tr>
+          <td class="blocka" onClick="mine(90)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(91)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(92)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(93)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(94)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(95)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(96)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(97)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(98)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+          <td class="blocka" onClick="mine(99)">
+            <svg height='100%' width='100%' viewbox='0 0 100 100'>
+              <svg height='100%' width='100%' viewbox='0 0 100 100'>
+                <rect width='100%' height='100%' fill='black' />
+                <path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' />
+              </svg>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<noscript>tern on javascript
+</noscript>
+</body>
+<script type="text/javascript">
+  let blocks = [[0,0,0,0,0,0,0,0,0,0,0,4,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,4,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,6,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,4,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0]]
+  var dert = 0,
+      stone = 0,
+      stra = 0
+  var dem = 0,
+      straport = 0,
+      atk = 1,
+      hp = 3,
+      sellect = 0,
+      brick = 0,
+      brickport = 0,
+      d1 = 0
+  let miners = []
+  function mine(block) {
+    if (sellect == 7) {
+      miners[miners.length] = block
+      sellect = 0
+    }
+    if(block == 9){
+      gohome()
+    }
+    if (blocks[dem][block] == 4) {
+      document.getElementById("craft").style.display = "block";
+      document.getElementById("play").style.display = "none";
+    }
+    if (blocks[dem][block] == 6 && dem == 1 && atk >= 2) {
+      blocks[dem][block] = 5
+      document.getElementsByClassName("blocka")[block].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><path d='m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35' stroke='black' stroke-width='1' fill='pink' /></svg>"
+      d1 = 1;
+    }
+    else if(blocks[dem][block] == 6 && dem == 1 && atk <= 2) {
+      hp -= 1
+      if (hp == 0) {
+        alert("game over");
+        document.location.reload(true);
+      }
+    }
+    if(blocks[dem][block] != 0 && blocks[dem][block] != 4 && blocks[dem][block] != 6 && sellect != 7 && sellect != 5 && blocks[dem][block] != 8 ){
+      if(blocks[dem][block] == 1){
+        stone += 1;
+      }
+      else if(blocks[dem][block] == 2 || blocks[dem][block] == 3){
+        dert += 1;
+      }
+      else if(blocks[dem][block] == 5){
+        stra += 1;
+        dert += 1
+      }
+      if(dem != 2 && blocks[dem][block] != 9){
+        blocks[dem][block] = Math.floor((Math.random() * 2) + 1)
+        if(blocks[dem][block] == 2) {
+          document.getElementsByClassName("blocka")[block].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='brown' /><path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='#960000' /></svg>"
+        }
+        if(blocks[dem][block] == 1) {
+          document.getElementsByClassName("blocka")[block].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='gray' /><path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='#A9A9A9' /></svg>"
+        }
+      }
+      else if(dem == 2){
+        document.getElementsByClassName("blocka")[block].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='gray' /><path d='m 0 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10' fill='black' /></svg>"
+      }
+    }
+    if (sellect == 5) {
+      blocks[dem][block] = 5
+      document.getElementsByClassName("blocka")[block].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><path d='m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35' stroke='black' stroke-width='1' fill='pink' /></svg>"
+      sellect = 0
+    }
+    if(blocks[dem][block] == 8) {
+      brick += 1}
+  }
+  function gohome() {
+    dem = 0
+    for (var i = 0; i < blocks[1].length; i++) {
+      if(blocks[0][i] == 0) {
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='black' /><path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' /></svg>"
+      }
+      if(blocks[0][i] == 2) {
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='brown' /><path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='#960000' /></svg>"
+      }
+      if(blocks[0][i] == 1) {
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='gray' /><path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='#A9A9A9' /></svg>"
+      }
+      if(blocks[0][i] == 3) {
+        blocks[0][i] == 3
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><path d='m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35' stroke='black' stroke-width='1' fill='green' /></svg>"
+      }
+      if(blocks[0][i] == 4) {
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='yellow' /><path d='m 10 10 l 35 0 l 0 35 l -35 0 l 0 -35 m 45 0 l 35 0 l 0 35 l -35 0 l 0 -35 m 0 45 l 35 0 l 0 35 l -35 0 l 0 -35 m -10 0 l -35 0 l 0 35 l 35 0 l 0 -35 z ' fill='black' /></svg>"
+      }
+      if(blocks[0][i] == 5) {
+        blocks[0][i] == 5
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><path d='m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35' stroke='black' stroke-width='1' fill='pink' /></svg>"
+      }
+      if(blocks[0][i] == 8) {
+        blocks[0][i] == 8
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='gray' /><path d='m 0 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10' fill='black' /></svg>"
+      }
+      if(blocks[0][i] == 9) {
+        blocks[0][i] == 9
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='#00FBFF' /></svg>"
+      }
+    }
+  }
+  function gostrua() {
+    dem = 1
+    for (var i = 0; i < blocks[1].length; i++) {
+      if(blocks[1][i] == 8) {
+        blocks[1][i] == 8
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='gray' /><path d='m 0 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10' fill='black' /></svg>"
+      }
+      else if(blocks[1][i] == 9) {
+        blocks[1][i] == 9
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='#00FBFF' /></svg>"
+      }
+      else if(blocks[1][i] == 0) {
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='black' /><path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' /></svg>"
+      }
+      else if(blocks[1][i] == 4) {
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='yellow' /><path d='m 10 10 l 35 0 l 0 35 l -35 0 l 0 -35 m 45 0 l 35 0 l 0 35 l -35 0 l 0 -35 m 0 45 l 35 0 l 0 35 l -35 0 l 0 -35 m -10 0 l -35 0 l 0 35 l 35 0 l 0 -35 z ' fill='black' /></svg>"
+      }
+      else if(blocks[1][i] == 6){
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='red' /><path d='m 10 20 l 35 0 l -25 10 l -10 -10 m 45 0 l 35 0 l -10 10 l -25 -10 m 25 70 a 1 1 0 0 0 -60 0 m 60 0' fill='black' /><circle cx='20' cy='25' r='2.5' fill='red' /><circle cx='80' cy='25' r='2.5' fill='red' /></svg>"
+      }
+      else {
+        blocks[1][i] = 5
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><path d='m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35' stroke='black' stroke-width='1' fill='pink' /></svg>"
+      }
+    }
+  }
+  function gobrick() {
+    dem = 2
+    for (var i = 0; i < blocks[1].length; i++) {
+      if(blocks[2][i] == 9) {
+        blocks[2][i] == 9
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='#00FBFF' /></svg>"
+      }
+      else if(blocks[2][i] == 0) {
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='black' /><path d='m 15 15 l 10 2.5 l 0 5 l 5 10 l -15 5 l 0 -23 m 45 30 l 10 5 l 5 15 l -15 6 l 0 -26 m 20 -35 l 10 -5 l -20 5 l 11 0 m -35 5 l 5 5 l 2 15 l -6 5 l -1 -25' fill='black' /></svg>"
+      }
+      else if(blocks[2][i] == 4) {
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='yellow' /><path d='m 10 10 l 35 0 l 0 35 l -35 0 l 0 -35 m 45 0 l 35 0 l 0 35 l -35 0 l 0 -35 m 0 45 l 35 0 l 0 35 l -35 0 l 0 -35 m -10 0 l -35 0 l 0 35 l 35 0 l 0 -35 z ' fill='black' /></svg>"
+      }
+      else if(blocks[2][i] == 6){
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='red' /><path d='m 10 20 l 35 0 l -25 10 l -10 -10 m 45 0 l 35 0 l -10 10 l -25 -10 m 25 70 a 1 1 0 0 0 -60 0 m 60 0' fill='black' /><circle cx='20' cy='25' r='2.5' fill='red' /><circle cx='80' cy='25' r='2.5' fill='red' /></svg>"
+      }
+      else if(blocks[2][i] == 5){
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><path d='m 0 0 l 100 0 l 0 100 l -100 0 l 0 -100 m 20 10 l 0 35 m 20 0 l 0 -35 m 20 0 l 0 35 m 20 0 l 0 -35 m 0 45 l 0 35 m -20 0 l 0 -35 m -20 0 l 0 35 m -20 0 l 0 -35' stroke='black' stroke-width='1' fill='pink' /></svg>"
+      }
+      else {
+        blocks[2][i] = 8
+        document.getElementsByClassName("blocka")[i].innerHTML = "<svg height='100%' width='100%' viewbox='0 0 100 100'><rect width='100%' height='100%' fill='gray' /><path d='m 0 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -70 10 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m 20 0 l 10 0 l 0 10 l -10 0 l 0 -10 m -90 10' fill='black' /></svg>"
+      }
+    }
+  }
+  function item(num) {
+    if (num==0){
+      document.getElementById("craft").style.display = "none";
+      document.getElementById("play").style.display = "block";
+      document.getElementById("recwirements").innerHTML = ""
+    }
+    if (num == 1){
+      document.getElementById("recwirements").innerHTML = "<p>stone "+ stone +"/10</p><br><button onClick='if(stone>=10){straport += 1; stone -= 10; item(1);}'>craft</button>"
+    }
+    if (num == 2){
+      document.getElementById("recwirements").innerHTML = "<p>Strawberry portle "+ straport +"/1</p><br><button onClick='if(straport>=1){straport -= 1; gostrua();item(0);}'>use</button>"
+    }
+    if (num == 3){
+      document.getElementById("recwirements").innerHTML = "<p>stone "+ stone +"/50</p><br><p>Strawberrys "+ stra +"/63</p><br><button onClick='if(stone>=50 && stra>=63 && atk == 1){atk = 2; stone -= 50;stra -= 63}item(3)'>craft</button>"
+    }
+    if (num == 4){
+      document.getElementById("recwirements").innerHTML = "<p>stone "+ stone +"/100</p><br><p>Strawberrys "+ stra +"/10</p><br><br><p>dirt "+ dert +"/500</p><br><button onClick='if(stone>=100 && stra>=10 && dert >= 500){ stone -= 100;stra -= 10;dert -= 500;sellect=7}item(0)'>place</button>"
+    }
+    if (num == 5){
+      document.getElementById("recwirements").innerHTML = "<p>Strawberrys "+ stra +"/1</p><br><br><p>dirt "+ dert +"/1</p><br><button onClick='if(stra>=1 && dert >= 1){sellect=5;stra -= 1;dert -= 1}item(0)'>place</button>"
+    }
+    if (num == 6){
+      document.getElementById("recwirements").innerHTML = "<p>brick "+ brick +"/200</p><br><button onClick='if(brick >= 200){brick -= 200;struct(0,0)}item(0)'>billd</button>"
+    }
+    if (num == 7){
+      document.getElementById("recwirements").innerHTML = "<p>Strawberrys "+ stra +"/10</p><br><button onClick='if(stra>=10 && d1){brickport += 1; stra -= 10; item(7);}'>craft</button>"
+    }
+    if (num == 8){
+      document.getElementById("recwirements").innerHTML = "<p>Brick portle "+ brickport +"/1</p><br><button onClick='if(brickport>=1){brickport -= 1; gobrick();item(0);}'>use</button>"
+    }
+    if (num == 9){
+      document.getElementById("recwirements").innerHTML = "<p>brick "+ brick +"/200</p><br><button onClick='if(brick >= 200){brick -= 200;struct(1,0)}item(0)'>billd</button>"
+    }
+  }
+  setInterval(function(){
+    for (var i = 0; i < miners.length; i++) {
+      mine(miners[i])
+      console.log(brick +":"+stone+":"+dert+":"+stra)
+    }
+  }
+              ,1)
+  function struct(num,i) {
+    if (num==0){
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=4
+      i++
+      blocks[0][i]=4
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=8
+      i++
+      gohome()
+    }
+    if (num==1){
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=2
+      i++
+      blocks[0][i]=2
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=4
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=2
+      i++
+      blocks[0][i]=2
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=4
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=2
+      i++
+      blocks[0][i]=2
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=2
+      i++
+      blocks[0][i]=2
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=1
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=5
+      i++
+      blocks[0][i]=8
+      i++
+      gohome()
+    }
+    if (num == 2){
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=3
+      i++
+      blocks[0][i]=8
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      blocks[0][i]=9
+      i++
+      gohome()
+    }
+  }
+  document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+      return false;
+    }
+  }
+  function clickbsb(e){
+    if (document.layers||document.getElementById&&!document.all){
+      if (e.which==2||e.which==3){
+        alert(message);
+        return false;
+      }
+    }
+  }
+  if (document.layers){
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown=clickbsb;
+  }
+  else if (document.all&&!document.getElementById){
+    document.onmousedown=clickdsb;
+  }
+  document.oncontextmenu=new Function("alert(message);return false")
+  if (document.addEventListener) {
+    document.addEventListener('contextmenu', function(e) {
+      alert("This function has been disabled to prevent you from stealing my code!");
+      e.preventDefault();
+    }
+                              , false);
+  }
+  else {
+    document.attachEvent('oncontextmenu', function() {
+      alert("This function has been disabled to prevent you from stealing my code!");
+      window.event.returnValue = false;
+    }
+                        );
+  }
+</script>
+</html>
